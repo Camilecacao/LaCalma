@@ -1,11 +1,12 @@
 'use client';
 
 import { Avatar, Dropdown, Navbar } from 'flowbite-react';
+import { Link } from 'react-router-dom';
 
 export const NavbarAvatar=()=> {
   return (
     <Navbar fluid rounded>
-      <Navbar.Brand href="https://flowbite-react.com">
+      <Navbar.Brand as={Link} to="/">
         <img src="/favicon.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" />
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Flowbite React</span>
       </Navbar.Brand>
@@ -30,13 +31,12 @@ export const NavbarAvatar=()=> {
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
-        <Navbar.Link href="#" active>
-          Home
+        <Navbar.Link as={Link} to="/" active>
+          Inicio
         </Navbar.Link>
-        <Navbar.Link href="#">About</Navbar.Link>
-        <Navbar.Link href="#">Services</Navbar.Link>
-        <Navbar.Link href="#">Pricing</Navbar.Link>
-        <Navbar.Link href="#">Contact</Navbar.Link>
+        <Navbar.Link as={Link} to="/About">Nosotros</Navbar.Link>
+        <Navbar.Link as={Link} to="/Menu">Menú</Navbar.Link>
+        <Navbar.Link as={Link} to="/Reservation">Reserva</Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
   )
