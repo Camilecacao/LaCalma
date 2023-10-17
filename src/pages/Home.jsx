@@ -6,7 +6,7 @@ import { FooterRRSS } from "../components/Footer"
 export const Home = () => {
   return (
    <>
-   <NavbarAvatar/>
+   {/* <NavbarAvatar/> */}
     <div>La Calma</div>
     {/* <img src="/images/caracolas.jpeg"></img> */}
     <div className="w-full h-[500px]">
@@ -29,7 +29,7 @@ export const Home = () => {
         />
       </Carousel>
       </div>
-      <FooterRRSS/>
+      {/* <FooterRRSS/> */}
    </>
   )
 }
