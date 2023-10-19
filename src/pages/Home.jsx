@@ -7,7 +7,7 @@ export const Home = () => {
   return (
    <>
    {/* <NavbarAvatar/> */}
-    <div>La Calma</div>
+    <div></div>
     {/* <img src="/images/caracolas.jpeg"></img> */}
     <div className="w-full h-[500px]">
       <Carousel indicators={false}>
