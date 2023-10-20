@@ -10,7 +10,7 @@ export const MainRouter = () => {
         <Route path="/About" element={<About/>}/>
         <Route path="/Menu" element={<Menu/>}/>
         <Route path="/Reservation" element={<Reservation/>}/>
-        <Route path="/*" element={<h1>Error 404 gilipollas</h1>}/>
+        <Route path="/*" element={<h1>Error 404</h1>}/>
 
     </Routes>
 
