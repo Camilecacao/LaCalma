@@ -1,6 +1,6 @@
 'use client';
 
-import { Avatar, Dropdown, Navbar } from 'flowbite-react';
+import { Navbar } from 'flowbite-react';
 import { Link, NavLink } from 'react-router-dom';
 
 export const NavbarAvatar=()=> {

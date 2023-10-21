@@ -12,13 +12,13 @@ export const FooterRRSS=()=> {
             <Footer.Brand
               alt="Flowbite Logo"
               href="https://flowbite.com"
-              name="Flowbite"
-              src="https://flowbite.com/docs/images/logo.svg"
+              name="La Calma"
+              src="/images/logo.png" className="fill-black"
             />
           </div>
           <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
             <div>
-              <Footer.Title title="about" />
+              <Footer.Title title="Nosotros" />
               <Footer.LinkGroup col>
                 <Footer.Link href="#">
                   Flowbite

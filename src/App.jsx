@@ -1,5 +1,7 @@
 import { } from 'react'
 
+
+
 import './App.css'
 // import {  } from './components/Saludos'
 // import { Home } from './pages/Home'
@@ -22,6 +24,7 @@ function App() {
    <MainRouter/>
    {/* <About/> */}
    <FooterRRSS/>
+  
     </>
   )
 }
