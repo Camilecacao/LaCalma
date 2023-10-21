@@ -1,12 +1,19 @@
 
+
 export const About = () => {
   return (
-    <div>
-      <h1>Acerca de La Calma</h1>
-      <span>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tenetur impedit atque harum provident voluptates reprehenderit, quod modi doloremque facere, vero saepe aperiam blanditiis, ab praesentium maiores omnis tempora magni totam? Quaerat debitis, quisquam dolor perferendis quae excepturi doloribus tempora natus mollitia non laboriosam molestiae reiciendis incidunt minima quo expedita eius dignissimos ea sunt voluptate? Esse voluptate quod aperiam facere necessitatibus dicta cumque quas reprehenderit aut odit! Aliquid unde beatae hic assumenda temporibus consequatur voluptatibus dolorum quia, veritatis est? Possimus accusantium sed deserunt error quisquam, doloribus, nihil quis in suscipit sit consectetur voluptas eligendi nemo vero ex aperiam optio et neque! Deleniti, modi. Eveniet iste et beatae magni praesentium dolores modi neque, nostrum ipsum velit officiis necessitatibus quo recusandae similique reprehenderit, quae sint maiores id temporibus. Voluptatem voluptate nulla sequi veritatis, nesciunt nam deserunt perspiciatis dicta optio aut molestiae, reiciendis omnis dolor dolorum debitis! Aliquid quis unde tempore voluptatum ratione libero animi quo totam magnam molestias dolorum beatae aspernatur explicabo, dolores vitae voluptate ipsam veniam dolore corrupti, quam eligendi. Tenetur aliquid quod reiciendis quo praesentium, reprehenderit magnam laborum veniam voluptates ullam laboriosam vero saepe iusto numquam. Voluptate incidunt doloremque vitae sint totam assumenda et dolorum impedit beatae, dicta doloribus provident reiciendis consequatur explicabo molestias laborum qui? Quia ratione consequuntur ipsum adipisci modi corrupti iste aliquam culpa qui. A, excepturi nostrum ipsam adipisci saepe amet ab aliquid repellat impedit nam, doloremque dolor alias? Voluptatem, aspernatur nisi voluptatum alias officiis sint eius quibusdam, voluptate dignissimos accusantium nobis incidunt ut nam reprehenderit inventore cupiditate sed explicabo quia et rem quo a ipsum ipsam earum. Aperiam aut ad illo quos voluptatum ab tenetur adipisci necessitatibus delectus dolore impedit, voluptatibus nobis cupiditate minus ex ut recusandae commodi excepturi modi incidunt temporibus! Ut, tenetur labore libero excepturi a vel laborum officiis. Ea autem dignissimos quae minus?
-      </span>
-
-    </div>
+  <>
+    <h1 className="text-5xl mx-auto text-center mt-10 font-bold">QUIÉNES SOMOS</h1>
+    <section className="flex flex-col md:flex-row gap-8 justify-around mt-20 px-10">
+     <article className="w-full md:h-1/2"> 
+     <h4 className="text-3xl text-center mb-5">Un concepto moderno de cocina</h4>
+     <p>Somos un Restaurante comprometidos con los sabores y la frescura desde el mar a tu plato. </p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ut eligendi voluptas excepturi, accusantium eaque nostrum, incidunt aliquam provident officia obcaecati fuga enim suscipit impedit reiciendis voluptatibus ad illo vitae.</p>
+     </article>
+    <img src="/images/Ignacio.jpg" className="w-full md:w-1/2 rounded-full"/>
+    </section>
+  </>
+  
   )
+
 }
