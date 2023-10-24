@@ -6,6 +6,7 @@ import { FooterRRSS } from "../components/Footer"
 export const Home = () => {
   return (
    <>
+   
    {/* <NavbarAvatar/> */}
     <div></div>
     {/* <img src="/images/caracolas.jpeg"></img> */}

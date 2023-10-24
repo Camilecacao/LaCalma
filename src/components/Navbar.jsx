@@ -1,4 +1,4 @@
-'use client';
+
 
 import { Navbar } from 'flowbite-react';
 import { Link, NavLink } from 'react-router-dom';
@@ -19,6 +19,7 @@ export const NavbarAvatar=()=> {
         <Navbar.Link className="text-white" as={NavLink} to="/About">Nosotros</Navbar.Link>
         <Navbar.Link className="text-white" as={NavLink} to="/Menu">Menú</Navbar.Link>
         <Navbar.Link className="text-white" as={NavLink} to="/Reservation">Reserva</Navbar.Link>
+        <Navbar.Link className="text-white" as={NavLink} to="/Contact">Contacto</Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
   )
