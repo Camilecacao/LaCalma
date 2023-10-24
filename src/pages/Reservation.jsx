@@ -22,6 +22,7 @@ export const Reservation = () => {
 
   return (
     <form onSubmit={onSubmitBooking} className="flex max-w-md flex-col gap-4">
+      <h1>Reservas</h1>
       <div>
         <div className="mb-2 block">
           <Label

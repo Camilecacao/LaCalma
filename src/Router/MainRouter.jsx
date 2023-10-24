@@ -3,6 +3,7 @@ import { Home } from "../pages/Home"
 import { About } from "../pages/About"
 import { Menu } from "../pages/Menu"
 import { Reservation } from "../pages/Reservation"
+import Contact from  "../pages/Contact"
 export const MainRouter = () => {
   return (
     <Routes>
@@ -10,6 +11,7 @@ export const MainRouter = () => {
       <Route path="/About" element={<About />} />
       <Route path="/Menu" element={<Menu />} />
       <Route path="/Reservation" element={<Reservation />} />
+      <Route path="/Contact" element={<Contact />} />
       <Route path="/*" element={<h1>Error 404</h1>} />
     </Routes>
 
