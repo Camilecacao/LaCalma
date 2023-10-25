@@ -1,10 +1,8 @@
-
-
 import { Button, Checkbox, Label, TextInput, Textarea } from 'flowbite-react';
 
 const Contact = () => {
     return (
-        <form className="flex max-w-md flex-col gap-4">
+        <form className="flex max-w-md flex-col gap-4 mt-5">
             <h1>Formulario de contacto</h1>
             <div>
                 <div>

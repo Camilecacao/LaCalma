@@ -33,7 +33,7 @@ const Carta = () => {
     
 
     return(
-        <section>
+        <section className="mt-5">
             <div>
             <h1 className="text-center">Menú</h1>
             
