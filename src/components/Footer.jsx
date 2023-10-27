@@ -21,10 +21,10 @@ export const FooterRRSS=()=> {
           </div>
           <div className="grid grid-cols-2 gap-5 sm:mt-4 sm:gap-24">
             <div>
-              <Footer.Title title="Nosotros" />
+              <Footer.Title title="¿Dónde nos encuentras?" />
               <Footer.LinkGroup col>
                 <Footer.Link href="#">
-                  Flowbite
+                  Av. Nueva Costanera #3832, Vitacura
                 </Footer.Link>
                 <Footer.Link href="#">
                   Tailwind CSS
@@ -35,10 +35,10 @@ export const FooterRRSS=()=> {
               <Footer.Title title="Contacto" />
               <Footer.LinkGroup col>
                 <Footer.Link href="#">
-                  Teléfono
+                  Teléfono: +56912345678
                 </Footer.Link>
                 <Footer.Link href="#">
-                  Correo
+                  Correo: lacalma@lacalma.cl
                 </Footer.Link>
               </Footer.LinkGroup>
             </div>
