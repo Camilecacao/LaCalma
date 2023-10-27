@@ -3,6 +3,7 @@ import { collection, getDocs } from "firebase/firestore";
 import { db } from "../config/firebase"
 import { Card, CardGroup, } from 'react-bootstrap'
 import Row from 'react-bootstrap/Row';
+import { PreparacionCarta } from "./PreparacionCarta";
 
 const Carta = () => {
 
@@ -44,19 +45,7 @@ const Carta = () => {
                     <h2 className="text-center">{menu.id}</h2>
                     <div className="flex flex-row flex-wrap justify-center">
                     {menu.platos.map((plato) => (
-                        <div key={menu.id} className="m-3">
-                        <Card border="light" bg="dark" text="white" style={{width: "18rem"}}>
-                            <Card.Img style={{height: "12rem"}} variant="top" src={plato.imagen} alt={plato.nombre} />
-                            <Card.Body className="text-center">
-                                <Card.Title>
-                                    {plato.nombre}
-                                </Card.Title>
-                                 <Card.Text>
-                                Precio: ${plato.precio}
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </div>
+                      <PreparacionCarta key={menu.id} plato={plato}/> 
     
                     ))}</div>   
                     
