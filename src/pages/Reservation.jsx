@@ -1,27 +1,39 @@
-import { Button, Checkbox, Label, TextInput } from "flowbite-react"
+import { db } from "../config/firebase";
+import { collection, addDoc, getDocs } from "firebase/firestore"
+import { Button, Label, TextInput } from "flowbite-react"
 import { useState } from "react";
 
 const initialBooking = {
-  email:'', name:'', date:'', amount:'', comments:''
+  email: '', name: '', date: '', amount: '', comments: ''
 }
 
 
 export const Reservation = () => {
   const [booking, setBooking] = useState(initialBooking)
-    function onSubmitBooking (event, ) {
-      event.preventDefault()
-      console.log (booking);
-    }
-
-    const onChangeBooking = (event) => {
-      setBooking({
-        ...booking,
-        [event.target.name]:event.target.value
+  async function onSubmitBooking(event,) {
+    event.preventDefault()
+    try {
+      const collectionRef = collection(db, "Reservas");
+      await addDoc(collectionRef, {
+        ...booking
       })
+    } catch (error) {
+
     }
+    setBooking({...initialBooking})
+  }
+
+  const onChangeBooking = (event) => {
+    setBooking({
+      ...booking,
+      [event.target.name]: event.target.value
+    })
+    
+  }
+
 
   return (
-    <form onSubmit={onSubmitBooking} className="flex max-w-md flex-col gap-4">
+    <form onSubmit={onSubmitBooking} className="flex max-w-md flex-col gap-4 mt-5">
       <h1>Reservas</h1>
       <div>
         <div className="mb-2 block">
@@ -48,15 +60,15 @@ export const Reservation = () => {
           />
         </div>
         <TextInput
-        name="name"
-        value={booking.name}
-        onChange={onChangeBooking}
+          name="name"
+          value={booking.name}
+          onChange={onChangeBooking}
           id="name"
           required
           type="text"
         />
       </div>
-      
+
       <div>
         <div className="mb-2 block">
           <Label
@@ -109,7 +121,7 @@ export const Reservation = () => {
         />
       </div>
       <Button type="submit">
-        Submit
+        Enviar
       </Button>
     </form>
     // <Fragment>
