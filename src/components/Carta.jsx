@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../config/firebase"
-import { Button, Card, CardGroup, } from 'react-bootstrap'
+import { Card, CardGroup, } from 'react-bootstrap'
 import Row from 'react-bootstrap/Row';
 
 const Carta = () => {
@@ -16,7 +16,7 @@ const Carta = () => {
                 
                 const docs = requestDocs.docs.map((doc) => ({ ...doc.data(),
                     id: doc.id,}))
-                    
+                 console.log(docs)   
                     
                 setMenus(docs)
                 
@@ -33,15 +33,17 @@ const Carta = () => {
     
 
     return(
-        <section className="mt-5">
-            <div>
-            <h1 className="text-center">Menú</h1>
+        <section className="mt-5 bg-[url('https://images.squarespace-cdn.com/content/v1/6260b3366c0480435312cb9c/856fee83-2b59-4341-84ff-22feed030cc8/DSC09297-Enhanced-NR-2.jpg?format=1500w')] bg-cover bg-no-repeat">
+            <div className="backdrop-filter backdrop-grayscale">
+            <h1 className="text-center text-white">Menú</h1>
             
-            <Row xs={1} md={2} className="justify-content-center g-8">
-            <CardGroup className="mt-5" >
+            <article className="flex flex-col">
+            <div className="mt-5 w-full" >
                 {menus.map((menu) => (
-                    
-                    menu.platos.map((plato) => (
+                    <div className="text-white" key={menu.id}>
+                    <h2 className="text-center">{menu.id}</h2>
+                    <div className="flex flex-row flex-wrap justify-center">
+                    {menu.platos.map((plato) => (
                         <div key={menu.id} className="m-3">
                         <Card border="light" bg="dark" text="white" style={{width: "18rem"}}>
                             <Card.Img style={{height: "12rem"}} variant="top" src={plato.imagen} alt={plato.nombre} />
@@ -55,11 +57,13 @@ const Carta = () => {
                             </Card.Body>
                         </Card>
                     </div>
-                    )),
+    
+                    ))}</div>   
                     
+                    </div> 
                 ))}
-            </CardGroup>
-            </Row>
+            </div>
+            </article>
             
         </div>
 
