@@ -18,7 +18,7 @@ export const Reservation = () => {
         ...booking
       })
     } catch (error) {
-
+      console.error(error)
     }
     setBooking({...initialBooking})
   }
@@ -33,7 +33,7 @@ export const Reservation = () => {
 
 
   return (
-    <form onSubmit={onSubmitBooking} className="flex max-w-md flex-col gap-4 mt-5">
+    <form onSubmit={onSubmitBooking} className="flex max-w-md flex-col gap-4 mt-5 mb-5">
       <h1>Reservas</h1>
       <div>
         <div className="mb-2 block">
