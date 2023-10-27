@@ -16,7 +16,7 @@ function App() {
   
 
   return (
-    <div className='bg-zinc-800'> 
+    <div className='bg-zinc-800 text-white'> 
     {/* <Reservation/> */}
     {/* <Menu/> */}
    {/* <Home/>    */}
