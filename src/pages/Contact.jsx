@@ -1,10 +1,9 @@
-
-
 import { Button, Checkbox, Label, TextInput, Textarea } from 'flowbite-react';
 
 const Contact = () => {
     return (
-        <form className="flex max-w-md flex-col gap-4">
+        <section className="bg-[url('https://images.squarespace-cdn.com/content/v1/6260b3366c0480435312cb9c/f60b5dab-9108-48cd-9f97-29f21729f5bc/La+Calma+by+Fredes+2.jpg?format=1500w')]">
+            <form className="flex max-w-md flex-col gap-4 mt-5 mb-5">
             <h1>Formulario de contacto</h1>
             <div>
                 <div>
@@ -62,6 +61,8 @@ const Contact = () => {
                 Submit
             </Button>
         </form>
+        </section>
+        
     )
 }
 
