@@ -16,16 +16,17 @@ function App() {
   
 
   return (
-    <>
+    <div className='bg-zinc-800'> 
     {/* <Reservation/> */}
     {/* <Menu/> */}
    {/* <Home/>    */}
    <NavbarAvatar/>
    <MainRouter/>
+   <hr className='my-5'/>
    {/* <About/> */}
    <FooterRRSS/>
   
-    </>
+    </div>
   )
 }
 
