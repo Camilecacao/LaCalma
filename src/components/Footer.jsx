@@ -7,7 +7,7 @@ export const FooterRRSS=()=> {
   return (
     <Footer container className="w-full bg-zinc-800">
       <div>
-        <div className="grid w-full justify-between sm:flex sm:justify-between md:px-48 md:flex md:grid-cols-1">
+        <div className="grid w-full justify-between sm:flex sm:justify-between gap-5 md:px-48 md:flex md:grid-cols-1">
           <div className='flex flex-row gap-5'> 
             <div>
             <img 
@@ -20,18 +20,19 @@ export const FooterRRSS=()=> {
             <h4 className=' text-white text-2xl'>La Calma</h4>
           </div>
           <div className="grid grid-cols-2 gap-5 sm:mt-4 sm:gap-24">
-            <div>
+            <div className='flex flex-col justify-start items-center'>
               <Footer.Title title="¿Dónde nos encuentras?" />
               <Footer.LinkGroup col>
                 <Footer.Link href="#">
                   Av. Nueva Costanera #3832, Vitacura
                 </Footer.Link>
                 <Footer.Link href="#">
-                  Tailwind CSS
+                  <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.9029565608853!2d-70.59830769999999!3d-33.3996959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf49f8b91445%3A0x42bc49a00488e9a0!2sAv.%20Nueva%20Costanera%203832%2C%207630357%20Vitacura%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1698454934806!5m2!1ses!2scl" width="300" height="225" allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
                 </Footer.Link>
               </Footer.LinkGroup>
             </div>
-            <div>
+            <div className='flex flex-col justify-start items-center'>
               <Footer.Title title="Contacto" />
               <Footer.LinkGroup col>
                 <Footer.Link href="#">

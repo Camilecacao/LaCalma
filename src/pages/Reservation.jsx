@@ -1,5 +1,5 @@
 import { db } from "../config/firebase";
-import { collection, addDoc, getDocs } from "firebase/firestore"
+import { collection, addDoc} from "firebase/firestore"
 import { Button, Label, TextInput } from "flowbite-react"
 import { useState } from "react";
 
@@ -33,11 +33,12 @@ export const Reservation = () => {
 
 
   return (
-    <form onSubmit={onSubmitBooking} className="flex max-w-md flex-col gap-4 mt-5 mb-5">
-      <h1>Reservas</h1>
+    <form onSubmit={onSubmitBooking} className="flex w-full md:px-48 flex-col gap-4 mt-5 mb-5">
+      <h1 className="text-center">Reservas</h1>
       <div>
         <div className="mb-2 block">
           <Label
+          color={"gray"}
             htmlFor="email1"
             value="Ingresa tu correo"
           />
@@ -55,6 +56,7 @@ export const Reservation = () => {
       <div>
         <div className="mb-2 block">
           <Label
+          color={"gray"}
             htmlFor="name"
             value="Ingresa tu nombre"
           />
@@ -72,6 +74,7 @@ export const Reservation = () => {
       <div>
         <div className="mb-2 block">
           <Label
+          color={"gray"}
             htmlFor="invitados"
             value="Comensales"
           />
@@ -89,6 +92,7 @@ export const Reservation = () => {
       <div>
         <div className="mb-2 block">
           <Label
+          color={"gray"}
             htmlFor="date"
             value="Elige una fecha"
           />
@@ -105,7 +109,8 @@ export const Reservation = () => {
       </div>
       <div>
         <div className="mb-2 block">
-          <Label
+          <Label 
+          color={"gray"}
             htmlFor="comentarios"
             value="Comentarios"
           />
