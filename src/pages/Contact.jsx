@@ -1,4 +1,7 @@
 import { Button, Checkbox, Label, TextInput } from 'flowbite-react';
+import { db } from '../config/firebase';
+import { useState } from 'react';
+
 
 
 const Contact = () => {
