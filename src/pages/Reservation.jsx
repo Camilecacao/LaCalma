@@ -35,7 +35,7 @@ export const Reservation = () => {
   return (
     <section className="bg-[url('https://images.squarespace-cdn.com/content/v1/6260b3366c0480435312cb9c/25bc1aae-5185-4c87-8111-216fc5d40874/DSC09227.jpg?format=1500w')] ">
       <div className="flex w-full flex-col bg-zinc-900/50 md:px-48 py-10 gap-4 mt-5 mb-5">
-        <form onSubmit={onSubmitBooking} className="flex w-full flex-col md:px-48 gap-4 mb-5">
+        <form onSubmit={onSubmitBooking} className="flex w-full flex-col md:px-48 gap-4 mb-5 p-5">
           <h1 className="text-center">Reservas</h1>
           <div>
             <div className="mb-2 block">
