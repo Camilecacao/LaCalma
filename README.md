@@ -7,7 +7,7 @@
 ***
 En este proyecto trabajaron en conjunto Camila Espinoza y M. Antonieta Rivano para crear una app de restaurant. 
 ### Vista de la página
-![Image text](https://www.united-internet.de/fileadmin/user_upload/Brands/Downloads/Logo_IONOS_by.jpg)
+![Website](https://lambent-rabanadas-7165f6.netlify.app/.)
 ![image](https://github.com/Camilecacao/LaCalma/assets/123422234/0532b0a0-a500-404e-be78-7d798ba77d35)
 
 ## Tecnologías
