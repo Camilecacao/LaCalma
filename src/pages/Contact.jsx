@@ -1,14 +1,16 @@
-import { Button, Checkbox, Label, TextInput, Textarea } from 'flowbite-react';
+import { Button, Checkbox, Label, TextInput } from 'flowbite-react';
+
 
 const Contact = () => {
     return (
         <section className="bg-[url('https://images.squarespace-cdn.com/content/v1/6260b3366c0480435312cb9c/f60b5dab-9108-48cd-9f97-29f21729f5bc/La+Calma+by+Fredes+2.jpg?format=1500w')]">
-            <form className="flex max-w-md flex-col gap-4 mt-5 mb-5">
-            <h1>Formulario de contacto</h1>
-            <div>
+            <form className="flex w-full flex-col bg-zinc-900/50 md:px-48 py-10 gap-4 mt-5 mb-5">
+            <h1 className='text-center'>Formulario de contacto</h1>
+            <div className='text-white'>
                 <div>
                     <div className="mb-2 block">
                         <Label
+                        color={"gray"}
                             htmlFor="name1"
                             value="Nombre completo"
                         />
@@ -21,6 +23,7 @@ const Contact = () => {
                 </div>
                 <div className="mb-2 block">
                     <Label
+                    color={"gray"}
                         htmlFor="email1"
                         value="Correo electrónico"
                     />
@@ -33,16 +36,17 @@ const Contact = () => {
                 />
             </div>
             <div
-      className="max-w-md"
+      
       id="textarea"
     >
       <div className="mb-2 block">
-        <Label
+        <Label color={"gray"}
+        
           htmlFor="comment"
           value="Comentarios"
         />
       </div>
-      <Textarea
+      <TextInput className='w-full'
         id="comment"
         placeholder="Escribe tu comentario..."
         required
@@ -52,13 +56,13 @@ const Contact = () => {
 
             <div className="flex items-center gap-2">
                 <Checkbox id="remember" />
-                <Label htmlFor="remember">
-                    Remember me
+                <Label color={"gray"} htmlFor="remember">
+                    Recordarme
                 </Label>
             </div>
             
             <Button type="submit">
-                Submit
+                Enviar
             </Button>
         </form>
         </section>
