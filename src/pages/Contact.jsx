@@ -4,7 +4,7 @@ import { Button, Checkbox, Label, TextInput } from 'flowbite-react';
 const Contact = () => {
     return (
         <section className="bg-[url('https://images.squarespace-cdn.com/content/v1/6260b3366c0480435312cb9c/25bc1aae-5185-4c87-8111-216fc5d40874/DSC09227.jpg?format=1500w')]">
-            <form className="flex w-full flex-col bg-zinc-900/50 md:px-48 py-10 gap-4 mt-5 mb-5">
+            <form className="flex w-full flex-col bg-zinc-900/50 md:px-48 py-10 gap-4 mt-5 mb-5 p-5">
                 <h1 className='text-center'>Formulario de contacto</h1>
                 <div className='text-white'>
                     <div>
